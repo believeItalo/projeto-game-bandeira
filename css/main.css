@@ -28,6 +28,8 @@
     font-size: 1rem;
 }
 .area_vizualiacao_bandeira{
+    display: flex;
+    justify-content: center;
     background-color: white;
     height: 15vh;
     width: 15vw;
@@ -42,11 +44,44 @@
 .area_digitacao_codigo{
     height: 55vh;
     width: 45vw;
+    padding: 30px 50px;
     border-radius: 2%;
     opacity: 60%;
     background-color: #22007C;
 }
 
+.area_escrita {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.background_texto {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+
+.faixa {
+    resize: none;
+    background: none;
+    font-size: 2rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.area_esquerda,
+.area_meio,
+.area_direita {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    font-size: 2rem;
+}
 
 
 /* configuração da area do produto do código (resultado final da bandeira)  */
@@ -66,8 +101,35 @@
     transform: scale(1.1);
 }
 .bandeira_final{
+    display: flex;
     width: 20vw;
     height: 25vh;
     background-color: white;
     border-radius: 2%;
+}
+
+.linha_esquerda,
+.linha_meio,
+.linha_direita {
+    border-radius: 2%;
+    flex-grow: 1;
+}
+
+.linha_esquerda {
+    background-color: #0000ff;
+}
+
+.linha_meio {
+    background-color: #ffff00;
+}
+
+.linha_direita {
+    background-color: #ff0000;
+}
+
+.bandeira_linha_esquerda,
+.bandeira_linha_meio,
+.bandeira_linha_direita {
+    border-radius: 2%;
+    flex-grow: 1;
 }
