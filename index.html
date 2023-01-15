@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js" defer type="module"></script>
     <title>Game Bandeiras</title>
 </head>
 <body>
-
-
     <section class="header">
         <img src="./imgs/logo__senai.png" alt="" class="logo__senai">
     </section>
@@ -23,22 +22,48 @@
                     Faça a Bandeira do País --> 
                 </h1>
                 <div class="area_vizualiacao_bandeira">
-                   
+                   <div class="linha_esquerda"></div>
+                   <div class="linha_meio"></div>
+                   <div class="linha_direita"></div>
                 </div>
             </div>
+
             <div class="area_digitacao_codigo">
-               
+               <div class="area_escrita">
+                    <div class="area_esquerda">
+                        <span>.faixa1 {</span>
+                        <span class="background_texto">
+                            background-color: <textarea placeholder="#FFFFFF" name="textarea_esquerda" id="faixa_esquerda" class="faixa" cols="15" rows="1"></textarea>;
+                        </span>
+                        <span>}</span>
+                    </div>
+
+                    <div class="area_meio">
+                        <span>.faixa2 {</span>
+                        <span class="background_texto">
+                            background-color: <textarea placeholder="#FFFFFF" name="textarea_meio" id="faixa_meio" class="faixa" cols="15" rows="1"></textarea>;
+                        </span>
+                        <span>}</span>
+                    </div>
+
+                    <div class="area_direita">
+                        <span>.faixa3 {</span>
+                        <span class="background_texto">
+                            background-color: <textarea placeholder="#FFFFFF" name="textarea_direita" id="faixa_direita" class="faixa" cols="15" rows="1"></textarea>;
+                        </span>
+                        <span>}</span>
+                    </div>
+               </div>
             </div>
         </div>
+
         <div class="area_produto_do_codigo">
             <div class="bandeira_final">
-                
+                <div id="faixa_esquerda_result" class="bandeira_linha_esquerda"></div>
+                <div id="faixa_meio_result" class="bandeira_linha_meio"></div>
+                <div id="faixa_direita_result" class="bandeira_linha_direita"></div>
             </div>
         </div>
     </section>
-
-
-
-
 </body>
 </html>
