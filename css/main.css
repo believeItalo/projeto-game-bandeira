@@ -8,7 +8,7 @@
 }
 /* configuração do fundo do retangulo da direita (área de código) */
 .area_de_codigo{
-    height: 80vh;
+    height: 82vh;
     width: 50vw;
     background-color: #000;
     border-radius: 2%;
@@ -78,9 +78,9 @@
 .area_direita {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    
 }
 
 
@@ -132,4 +132,29 @@
 .bandeira_linha_direita {
     border-radius: 2%;
     flex-grow: 1;
+}
+
+/* Configuração do botão de validação*/
+
+.botao_validacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: greenyellow;
+    height: 4vh;
+    width: 7vw;
+    border-radius: 5%;
+}
+
+/* configuração da posição do botão, a div a baixo foi utilizada para posicionar o botão, evitando o uso de padding ou margin.*/
+.area_botao_validacao{   
+    width: 45vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
 }
