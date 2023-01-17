@@ -28,3 +28,33 @@ textAreaFaixaDireita.addEventListener("keydown", (e) => {
         e.preventDefault();
     }
 })
+
+const botaoValidacao = document.getElementById('botao_validacao')
+const modalCorrect = document.getElementById('modal_result_correct')
+const modalIncorrect = document.getElementById('modal_result_incorrect')
+const buttonCloseModalCorrect = document.getElementById("close_correct_modal")
+const buttonCloseModalIncorrect = document.getElementById("close_incorrect_modal")
+botaoValidacao.addEventListener("click", () => {
+    if(resultFaixaEsquerda.style.backgroundColor === "rgb(0, 255, 0)" && resultFaixaMeio.style.backgroundColor === "rgb(255, 255, 255)" && resultFaixaDireita.style.backgroundColor === "rgb(255, 0, 0)") {
+        modalCorrect.style.display = "block"
+    } else {
+        
+        modalIncorrect.style.display = "block"
+    }
+})
+
+buttonCloseModalCorrect.onclick = () => {
+    modalCorrect.style.display = "none"
+}
+buttonCloseModalIncorrect.onclick = () => {
+    modalIncorrect.style.display = "none"
+}
+
+window.onclick = (event) => {
+    if (event.target == modalCorrect) {
+        modalCorrect.style.display = "none"
+    }
+    if (event.target == modalIncorrect) {
+        modalIncorrect.style.display = "none"
+    }
+}
