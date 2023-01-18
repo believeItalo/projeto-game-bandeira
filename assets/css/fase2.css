@@ -116,7 +116,7 @@
 }
 
 .linha_esquerda {
-    background-color: lime;
+    background-color: blue;
 }
 
 .linha_meio {
@@ -195,6 +195,10 @@
 
 #modal_result_correct {
     display: none;
+}
+
+.next_level {
+    color: white;
 }
 
 #modal_result_incorrect {

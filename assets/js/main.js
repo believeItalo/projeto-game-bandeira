@@ -14,12 +14,8 @@ textAreaFaixaEsquerda.addEventListener("keydown", (e) => {
         e.preventDefault();
     }
 })
-
 textAreaFaixaEsquerda.addEventListener("mouseout", (e) => {
-
     resultFaixaEsquerda.style.backgroundColor = textAreaFaixaEsquerda.value
-
-
 })
 
 
@@ -30,11 +26,8 @@ textAreaFaixaMeio.addEventListener("keydown", (e) => {
         e.preventDefault();
     }
 })
-
 textAreaFaixaMeio.addEventListener("mouseout", (e) => {
-
     resultFaixaMeio.style.backgroundColor = textAreaFaixaMeio.value
-
 })
 
 
@@ -45,18 +38,15 @@ textAreaFaixaDireita.addEventListener("keydown", (e) => {
         e.preventDefault();
     }
 })
-
 textAreaFaixaDireita.addEventListener("mouseout", (e) => {
-
     resultFaixaDireita.style.backgroundColor = textAreaFaixaDireita.value
-
 })
 
 const botaoValidacao = document.getElementById('botao_validacao')
 const modalCorrect = document.getElementById('modal_result_correct')
 const modalIncorrect = document.getElementById('modal_result_incorrect')
-const buttonCloseModalCorrect = document.getElementById("close_correct_modal")
 const buttonCloseModalIncorrect = document.getElementById("close_incorrect_modal")
+
 botaoValidacao.addEventListener("click", () => {
     if(resultFaixaEsquerda.style.backgroundColor === "lime" && resultFaixaMeio.style.backgroundColor === "white" && resultFaixaDireita.style.backgroundColor === "red") {
         modalCorrect.style.display = "block"
@@ -66,9 +56,6 @@ botaoValidacao.addEventListener("click", () => {
     }
 })
 
-buttonCloseModalCorrect.onclick = () => {
-    modalCorrect.style.display = "none"
-}
 buttonCloseModalIncorrect.onclick = () => {
     modalIncorrect.style.display = "none"
 }
